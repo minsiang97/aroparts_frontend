@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
+
+.google-map-div {
+    position: relative;
+    height: 80vh;
+    margin: auto;
+    margin-top: 130px;
+}
+
+.gm-style-mtc span {
+    display: inline-block;
+    transform: translateY(-35%);
+}
+
+.location {
+    display: flex;
+}
+
+.contact-number {
+    padding-top: 10px;
+}
+
+.enquiry {
+    font-size: larger;
+    font-family: 'Alegreya', serif;
+}
+    
+
+.enquiry-location {
+    font-family: 'Alegreya', serif;
+}
+
+
+@media(max-width:768px){
+    .operating-hour {
+        text-align: center;
+    }
+
+    .enquiry-col {
+        text-align: center;
+    }
+
+    .enquiry-contact {
+        justify-content: center;
+    }
+
+    .location-title{
+        text-align: center;
+    }
+}

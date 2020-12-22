@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+.big-image {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    
+}
+
+body {
+    position: relative;
+}
+
+.image {
+    width: 110%;
+}
+
+.slogan {
+    position: absolute;
+    display: flex;
+    top: 35%;
+    left: 8%;
+    z-index: 1;
+    color: white;
+}
+
+.slogan h5 {
+    font-weight: bolder;
+    font-size: 150%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.about-us {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: black;
+    position: relative;
+    background-image: url("../images/spareparts.jpeg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.about-us-row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255, 0.7);
+}
+
+.about-us h1 {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Merriweather', serif;
+}
+
+.about-us h5 {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Merriweather', serif;
+}
+
+.categories {
+    background-color: white;
+    padding-top: 130px;
+    padding-bottom: 8%;
+}
+
+.categories h1 {
+    font-family: 'Graduate', cursive;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.categories h2 {
+    font-family: 'Cambo', serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-col{
+    background-color: lightgray;
+}
+
+.category-col3 {
+    background-color: lightgray;   
+}
+
+.footer h1 {
+    font-family: 'Noto Serif', serif;
+
+}
+
+.icon {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.5)
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 1);
+    padding-left: 20px;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.number {
+    color: white;
+    margin-top: 10px;
+}
+
+.text {
+    color: white;
+}
+
+@media (max-width : 725px){
+    .image{
+        height: 55vh;
+    } 
+
+    .about-us {
+        height: 50vh;
+    }
+
+    .slogan {
+        width: 50%;
+    }
+    
+    .slogan h5{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 991px) and (min-width : 768px){
+    .slogan h5 {
+        font-size: 100%;
+    }
+
+    .category-col{
+        background-color: lightgray;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-bottom: 2px black solid;
+        border-right: 2px black solid;
+    }
+    
+    .category-col2{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-bottom: 2px black solid;
+    }
+
+    .category-col3 {
+        background-color: lightgray;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-right: 2px black solid;
+    }
+}
+
+.services {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Heebo', sans-serif;
+}
+
+.services h1 {
+    color: black;
+}
+
+.services h3 {
+    color: black;
+}
+
+.about-button {
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+}
+
+.category-link {
+    color: black;
+}
+
+.category-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.contact p {
+    color: gray;
+}
+
+.contact p:hover {
+    color: white;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.product-text{
+    font-family: 'Noto Serif', serif;
+    font-size: x-large;
+    color: white;
+    font-weight: 800;
+}
+
+.scroll-top {
+    color: white;
+    animation: 0.5s scrollTop infinite alternate ease;
+    cursor: pointer;
+
+}
+
+@keyframes scrollTop {
+    from {
+        transform: translateY(5px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}

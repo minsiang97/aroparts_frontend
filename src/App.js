@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import WebNavbar from './components/Navbar';
+import Homepage from './pages/Homepage';
+import {ParallaxProvider} from 'react-scroll-parallax'
+import Product from './pages/Products/Products';
+import {Switch, Route} from 'react-router-dom'
+import DisplayProducts from './pages/DisplayProducts/DisplayProducts';
+import ContactUs from './pages/ContactUs/ContactUs';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <WebNavbar/>
+    <Switch>
+      <Route exact path="/"><Homepage/></Route>
+      <Route path="/category/:id/products"><Product/></Route>
+      <Route path="/products/:id"><DisplayProducts/></Route>
+      <Route path ="/contact-us"><ContactUs/></Route>
+    </Switch>
+    </>
   );
 }
 

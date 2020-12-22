@@ -1,0 +1,49 @@
+.product-container {
+    margin-top: 120px;
+}
+
+.slick-prev::before, .slick-next::before{
+    color: black;
+}
+
+.product-images {
+    width: 80%;
+    height: 100px;
+}
+
+.product-images {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-images:hover {
+    outline: 2px black solid;
+}
+
+.thumbnail-slider-wrap {
+    margin-top: 15px;
+  }
+.thumbnail-slider-wrap .slick-track .slick-slide {
+    text-align: center;
+  }
+
+.slick-slide2 {
+    height: 110px;
+}
+
+.product-image-slider {
+    margin-bottom: 50px;
+}
+
+.product-description-line {
+    padding-top: 20px;
+}
+
+.product-price {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.product-description-line h5 {
+    color: red;
+}

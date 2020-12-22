@@ -1,0 +1,65 @@
+.card-container {
+    margin-top: 120px;
+}
+
+.loading-div {
+    position: relative;
+    top: 50%;
+}
+
+.loading-head {
+    height: 100vh;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+
+.product-image {
+  width: 100%;
+  transition: .5s all ease-in-out
+}
+
+.product-image:hover {
+  transform: scale(1.2);
+}
+
+.card-content {
+  margin-bottom: 50px;
+  
+}
+
+.card-image {
+  overflow: hidden;
+}
+
+.card-title {
+  color: black;
+}
+
+.product-link:hover {
+  text-decoration: none;
+}
