@@ -156,12 +156,12 @@ const DisplayProducts = () => {
                 <Col lg={3} xs={12} className="mb-5 pt-4">
                     <p className="product-text">Aroparts' Products</p>
                     <div className="contact">
-                        <Link className="link" to="/category/1/products"><p>Boiler System & Boiler Accessories</p></Link>
-                        <Link className="link" to="/category/2/products"><p>Electronic & Electrical Accessories</p></Link>
-                        <Link className="link" to="/category/3/products"><p>Hydraulic System & Accessories</p></Link>
-                        <Link className="link" to="/category/4/products"><p>Solar System</p></Link>
-                        <Link className="link" to="/category/5/products"><p>Pneumatic System & Accessories</p></Link>
-                        <Link className="link" to="/category/6/products"><p>Gauge</p></Link>
+                        <a className="link" href="/category/1/products"><p>Boiler System & Boiler Accessories</p></a>
+                        <a className="link" href="/category/2/products"><p>Electronic & Electrical Accessories</p></a>
+                        <a className="link" href="/category/3/products"><p>Hydraulic System & Accessories</p></a>
+                        <a className="link" href="/category/4/products"><p>Solar System</p></a>
+                        <a className="link" href="/category/5/products"><p>Pneumatic System & Accessories</p></a>
+                        <a className="link" href="/category/6/products"><p>Gauge</p></a>
                     </div>
                 </Col>
                 <Col lg={3} xs={12} className="mb-5 pt-4">
