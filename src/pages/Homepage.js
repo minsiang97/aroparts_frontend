@@ -25,7 +25,7 @@ import solar from '../images/solar.png'
 import biomass from '../images/biomass.png'
 import {Link} from 'react-router-dom'
 import {MdLocationOn} from 'react-icons/md'
-import {HashLink} from 'react-router-hash-link'
+import {Link as HashLink} from 'react-scroll'
 import {BiMouse} from 'react-icons/bi'
 import {animateScroll as scroll} from 'react-scroll'
 import './Homepage.css'
@@ -65,7 +65,7 @@ const Homepage = () => {
                <Col md={6} xs={8} className="text-center about-us-row pt-3 pb-3">
                     <h1>Aroparts Products</h1>
                     <h5>Bringing health to your machine</h5>
-                    <HashLink to="#category" smooth><button className="btn-dark about-button">Learn More</button></HashLink>
+                    <HashLink to="category" smooth={true} duration={1000}><button className="btn-dark about-button">Learn More</button></HashLink>
                </Col>
             </Row>
         </Container>
