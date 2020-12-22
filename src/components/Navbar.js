@@ -93,10 +93,10 @@ const WebNavbar = () => {
                 <a href="https://shopee.com.my/aroindustrialparts" target="blank"><img src={shopee} width="55" height="55" className="nav-icon"></img></a>
                 </div>
                 <Form inline className="form-search" onSubmit={(e) => handleSubmit(e)} >
-                    <Select className="bar mr-sm-2" placeholder="Search here..." options={products} onChange={onChange} isSearchable={true} onInputChange={handleInputChange}>
+                    <Select className="bar mr-sm-2" placeholder="Search" options={products} onChange={onChange} isSearchable={true} onInputChange={handleInputChange}>
                         
                     </Select>
-                    <FaSearch color="black" className="search" type="submit"></FaSearch>
+                    <FaSearch color="black" className="search" onClick={(e) => handleSubmit(e)}></FaSearch>
                 </Form>
             </Navbar.Collapse>
         </Navbar>
@@ -123,9 +123,9 @@ const WebNavbar = () => {
                 <a href="https://shopee.com.my/aroindustrialparts" target="blank"><img src={shopee} width="55" height="55" className="nav-icon"></img></a>
                 </div>
                 <Form inline className="form-search" onSubmit={(e) => handleSubmit(e)}>
-                    <Select className="bar mr-sm-2" placeholder="Search here..." options={products} onChange={onChange} isSearchable={true} onInputChange={handleInputChange}>
+                    <Select className="bar mr-sm-2" placeholder="Search" options={products} onChange={onChange} isSearchable={true} onInputChange={handleInputChange}>
                     </Select>
-                    <FaSearch color="white" className="search" type="submit"></FaSearch>
+                    <FaSearch color="white" className="search" onClick={(e) => handleSubmit(e)}></FaSearch>
                 </Form>
             </Navbar.Collapse>
         </Navbar>
