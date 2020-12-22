@@ -125,7 +125,7 @@ body {
     color: white;
 }
 
-@media (max-width : 725px) and (orientation : portrait){
+@media (max-width : 725px) and (orientation : landscape){
     .image {
         height: 100vh;
     }
