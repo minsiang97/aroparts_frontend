@@ -125,6 +125,18 @@ body {
     color: white;
 }
 
+@media (max-width : 725px) and (orientation : portrait){
+    .image {
+        height: 100vh;
+    }
+}
+
+@media (max-width : 768px){
+    .slogan h5 {
+        font-size: 100%;
+    }
+}
+
 @media (max-width : 725px){
     .image{
         height: 55vh;
