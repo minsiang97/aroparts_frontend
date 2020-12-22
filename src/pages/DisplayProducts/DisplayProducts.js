@@ -73,7 +73,7 @@ const DisplayProducts = () => {
         <>
         <Container className="product-container pb-5">
             <Row className="justify-content-around">
-                <Col md={5} xs={12} className="product-image-slider">
+                <Col md={5} xs={11} className="product-image-slider">
                     <Slider {...settings} asNavFor={nav2} ref={slider => (setSlider1(slider))}>
                         {productImages.map((image) => {
                             return (
