@@ -128,7 +128,7 @@ const Homepage = () => {
                                 <MdLocationOn size={35} color="white" className="location"/>
                             </Col>
                             <Col xs={10} className="pl-4">
-                                <p className="number">Laluan Perusahaan Menglembu 10, Kawasan Perusahaan Menglembu, 31450 Ipoh, Perak (Opposite Puspakom)</p>
+                                <p className="number">2A, Laluan Perusahaan Menglembu 10, Kawasan Perusahaan Menglembu, 31450 Ipoh, Perak (Opposite Puspakom)</p>
                             </Col>
                             
                         </Row>

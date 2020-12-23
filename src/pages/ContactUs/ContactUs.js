@@ -26,7 +26,7 @@ const ContactUs = () => {
                             <MdLocationOn size={25} className="location"/>
                         </Col>
                         <Col xs={10}>
-                            <p>Laluan Perusahaan Menglembu 10, Kawasan Perusahaan Menglembu, 31450 Ipoh, Perak (Opposite Puspakom)</p> 
+                            <p>2A, Laluan Perusahaan Menglembu 10, Kawasan Perusahaan Menglembu, 31450 Ipoh, Perak (Opposite Puspakom)</p> 
                         </Col>      
                     </Row>
                     
