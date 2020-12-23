@@ -123,15 +123,6 @@ const Homepage = () => {
                             </Col>
                             
                         </Row>
-                        <Row>
-                            <Col xs={1} className="pl-2 pt-2">
-                                <MdLocationOn size={35} color="white" className="location"/>
-                            </Col>
-                            <Col xs={10} className="pl-4">
-                                <p className="number">2A, Laluan Perusahaan Menglembu 10, Kawasan Perusahaan Menglembu, 31450 Ipoh, Perak (Opposite Puspakom)</p>
-                            </Col>
-                            
-                        </Row>
                     </div>
                 </Col>
                 <Col lg={3} xs={12} className="mb-5 pt-4">

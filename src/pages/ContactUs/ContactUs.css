@@ -19,16 +19,18 @@
 
 .contact-number {
     padding-top: 10px;
+    font-size: x-large;
 }
 
 .enquiry {
-    font-size: larger;
     font-family: 'Alegreya', serif;
 }
     
 
 .enquiry-location {
     font-family: 'Alegreya', serif;
+    position: relative;
+    height: 100vh;
 }
 
 
@@ -48,4 +50,19 @@
     .location-title{
         text-align: center;
     }
+}
+
+.operating-hour-text {
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+.operating-row {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.enquiry-text {
+    font-size: x-large;
 }
