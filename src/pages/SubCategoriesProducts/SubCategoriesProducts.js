@@ -1,10 +1,11 @@
+import axios from 'axios'
 import React, {useState, useEffect} from 'react'
-import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
+import { useParams, Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/esm/Container';
+import Dropdown from 'react-bootstrap/Dropdown'
 import Spinner from 'react-bootstrap/Spinner'
 import Carousel from 'react-bootstrap/Carousel'
 import Slider from 'react-slick'
@@ -19,20 +20,19 @@ import shopee from '../../images/shopee2.png'
 import {RiArrowDownSFill} from 'react-icons/ri'
 import {MdKeyboardArrowRight} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
-import "./Products.css"
+import './SubCategoriesProducts.css'
 
-const Product = () => {
+const SubCategoriesProducts = () => {
+    let {id} = useParams()
     const [products, setProducts] = useState([])
     const [categories, setCategories] = useState([])
-    const [category, setCategory] = useState("")
+    const [subCategory, setSubCategory] = useState("")
     const [checked, updateChecked] = useState(true)
-    
-    let {id} = useParams()
+
     useEffect(() => {
-        axios.get(`https://aroparts.herokuapp.com/api/v1/products/category/${id}`)
+        axios.get(`https://aroparts.herokuapp.com/api/v1/products/category/sub_category/${id}`)
         .then(function(response){
             setProducts(response.data)
-            
         })
         axios.get('https://aroparts.herokuapp.com/api/v1/categories')
         .then(function(response){
@@ -40,12 +40,11 @@ const Product = () => {
             console.log(response.data)
             console.log(response.data[0].sub_categories[0].sub)
         })
-        axios.get(`https://aroparts.herokuapp.com/api/v1/categories/${id}`)
+        axios.get(`https://aroparts.herokuapp.com/api/v1/categories/subcategory/${id}`)
         .then(function(response){
-            setCategory(response.data)
-            console.log(response.data)
+            setSubCategory(response.data)
         })
-    },[])
+    }, [])
 
     const mobile = () => {
         if (window.outerWidth < 768){
@@ -69,14 +68,14 @@ const Product = () => {
         <>
         <Container fluid className="card-container pb-5">
         <Row>
-            <Col lg={3} md={4} xs={12}>
-                <Row className="mb-5">
+            <Col lg={3} md={4} xs={12} className="category-column">
+                <Row className="mb-5 side-category-row justify-content-center">
                     <div className="side-category">
                         <input type="checkbox" id="A" checked={checked} onChange={() => handleClick()}></input>
                         <label for="A" className="arrow"><RiArrowDownSFill size={25} ></RiArrowDownSFill></label>
                         <label for="A" className="category-title">Categories</label>
 
-                        <div className="multi-level m-auto">
+                        <div className="multi-level p-auto">
                         {categories.map((category) => {
                             return (
                                 <div className="item">
@@ -97,16 +96,18 @@ const Product = () => {
                     </div>
                 
                 </Row>
+            
             </Col>
             <Col lg={9} md={8} xs={12}>
-                <div className="mb-4 row">
+                <div className="row mb-4">
                     <Col>
-                        <Link className="sub-category" to={`/products`}>Products</Link>
+                        <Link className="sub-category" to="/products">Products</Link>
                         <MdKeyboardArrowRight size={25}/>
-                        <span className="sub-category-name">{category.name}</span>
+                        <Link to={`/category/${subCategory.category_id}/products`} className="sub-category">{subCategory.category}</Link>
+                        <MdKeyboardArrowRight size={25}/>
+                        <span className="sub-category-name">{subCategory.name}</span>
                     </Col>
                 </div>
-                
                 <Row>
                 {products.map((product) => {
                     return (
@@ -124,7 +125,6 @@ const Product = () => {
                     )
                 })}
                 </Row>
-
             </Col>
             
             
@@ -210,4 +210,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default SubCategoriesProducts

@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import lazada1 from '../../images/lazada.png'
+import shopee1 from '../../images/shopee.png'
 import Spinner from 'react-bootstrap/Spinner'
 import {BiMouse} from 'react-icons/bi'
 import {animateScroll as scroll} from 'react-scroll'
@@ -14,6 +16,7 @@ import {SocialIcon} from 'react-social-icons'
 import lazada from '../../images/lazada1.png'
 import shopee from '../../images/shopee2.png'
 import {MdLocationOn} from 'react-icons/md'
+import {MdKeyboardArrowRight} from 'react-icons/md'
 import {Link} from 'react-router-dom'
 import './DisplayProducts.css'
 
@@ -25,6 +28,7 @@ const DisplayProducts = () => {
     const [nav2, setNav2] = useState(null);
     const [slider1, setSlider1] = useState(null);
     const [slider2, setSlider2] = useState(null);
+    const [subCategory, setSubCategory] = useState("")
 
     useEffect(() => {
 
@@ -72,6 +76,17 @@ const DisplayProducts = () => {
     return (
         <>
         <Container className="product-container pb-5">
+            <div className="mb-4 row">
+                <Col>
+                    <Link className="sub-category" to={`/products`}>Products</Link>
+                    <MdKeyboardArrowRight size={25}/>
+                    <Link className="sub-category" to={`/category/${product.category_id}/products`}>{product.category}</Link>
+                    <MdKeyboardArrowRight size={25}/>
+                    <Link className="sub-category" to={`/category/sub-category/${product.sub_category_id}`}>{product.sub_category}</Link>
+                    <MdKeyboardArrowRight size={25}/>
+                    <span className="sub-category-name">{product.product_name}</span>
+                </Col>
+            </div>
             <Row className="justify-content-around">
                 <Col md={5} xs={11} className="product-image-slider">
                     <Slider {...settings} asNavFor={nav2} ref={slider => (setSlider1(slider))}>
@@ -115,6 +130,12 @@ const DisplayProducts = () => {
                             <p>{product.description_line_9}</p>
                             <h5>{product.description_line_10}</h5>
                         </div>
+                        <div className="mt-4">
+                            <h4>Purchase at :</h4>
+                            <a href="https://www.lazada.com.my/aro-industrial-parts/?q=All-Products&langFlag=en&from=wangpu&lang=en&pageTypeId=2" target="blank"><img src={lazada1} width="55" height="55" className="nav-icon"></img></a>
+                            <a href="https://shopee.com.my/shop/193591196/search" target="blank"><img src={shopee1} width="55" height="55" className="nav-icon"></img></a>
+                        </div>
+                        
                     </div>
                 </Col>
             </Row>

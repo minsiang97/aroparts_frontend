@@ -54,6 +54,7 @@
 
 .card-image {
   overflow: hidden;
+  border-bottom: 1px dashed lightgray;
 }
 
 .card-title {
@@ -68,7 +69,18 @@
   height: 100px;
 }
 
-@media (max-width:768px){
+.product-chinese-name {
+  height: 30px;
+}
+
+
+@media (max-width:576px){
+  .product-name {
+    height: 50px;
+  }
+}
+
+@media (max-width:376px){
   .product-name {
     height: 70px;
   }

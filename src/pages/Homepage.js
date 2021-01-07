@@ -71,31 +71,23 @@ const Homepage = () => {
         </Container>
 
         <Container className="categories" id="category">
-            <h1>Product Categories</h1>
+            <h1>Our Best Seller</h1>
             <Row className="justify-content-center">
-                <Col lg={4} md={6} xs={12} className="text-center category-col">
-                    <Link to="/category/1/products" className="category-link"><img src={biomass} width="100%" className="icon"></img></Link>
-                    <Link to="/category/1/products" className="category-link"><h2>Biomass System & Boiler</h2></Link>
+                <Col lg={3} md={6} xs={12} className="text-center category-col">
+                    <Link to="/category/sub-category/8" className="category-link"><img src={sommy}  width="100%" className="icon"></img></Link>
+                    <Link to="/category/sub-category/8" className="category-link"><h2>Timer & Digital Meter</h2></Link>
                 </Col>
-                <Col lg={4} md={6} xs={12} className="text-center category-col2">
-                    <Link to="/category/2/products" className="category-link"><img src={sommy}  width="100%" className="icon"></img></Link>
-                    <Link to="/category/2/products" className="category-link"><h2>Electronic & Electrical</h2></Link>
+                <Col lg={3} md={6} xs={12} className="text-center category-col2">
+                    <Link to="/category/sub-category/21" className="category-link"><img src={solar} width="100%" className="icon"></img></Link>
+                    <Link to="/category/sub-category/21" className="category-link"><h2>Solar Spotlight</h2></Link>
                 </Col>
-                <Col lg={4} md={6} xs={12} className="text-center category-col">
-                    <Link to="/category/3/products" className="category-link"><img src={hydraulic} width="100%" className="icon"></img></Link>
-                    <Link to="/category/3/products" className="category-link"><h2>Hydraulic System</h2></Link>
+                <Col lg={3} md={6} xs={12} className="text-center category-col3">
+                    <Link to="/category/sub-category/17" className="category-link"><img src={pneumatic} width="100%" className="icon"></img></Link>
+                    <Link to="/category/sub-category/17" className="category-link"><h2>Air Solenoid Valve</h2></Link>
                 </Col>
-                <Col lg={4} md={6} xs={12} className="text-center category-col2">
-                    <Link to="/category/4/products" className="category-link"><img src={solar} width="100%" className="icon"></img></Link>
-                    <Link to="/category/4/products" className="category-link"><h2>Solar System</h2></Link>
-                </Col>
-                <Col lg={4} md={6} xs={12} className="text-center category-col3">
-                    <Link to="/category/5/products" className="category-link"><img src={pneumatic} width="100%" className="icon"></img></Link>
-                    <Link to="/category/5/products" className="category-link"><h2>Pneumatic</h2></Link>
-                </Col>
-                <Col lg={4} md={6} xs={12} className="text-center category-col4">
-                    <Link to="/category/6/products" className="category-link"><img src={gauge} width="100%" className="icon"></img></Link>
-                    <Link to="/category/6/products" className="category-link"><h2>Gauge</h2></Link>
+                <Col lg={3} md={6} xs={12} className="text-center category-col4">
+                    <Link to="/category/sub-category/24" className="category-link"><img src={gauge} width="100%" className="icon"></img></Link>
+                    <Link to="/category/sub-category/24" className="category-link"><h2>Pressure Gauge</h2></Link>
                 </Col>
             </Row>
         </Container>

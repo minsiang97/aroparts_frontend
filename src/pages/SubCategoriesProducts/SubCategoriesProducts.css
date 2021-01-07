@@ -1,0 +1,77 @@
+.card-image {
+    overflow: hidden;
+    border-bottom: 1px dashed lightgray;
+  }
+
+.item ul, .multi-level, .side-category input[type="checkbox"] {
+    display: none;
+}
+
+.item input:checked ~ ul, #A:checked ~ .multi-level {
+    display: block;
+}
+
+label:hover, .arrow:hover {
+    cursor: pointer;
+}
+
+.item ul, .item li{
+    list-style: none;
+}
+
+.side-category input + .arrow {
+    transform: rotate(-90deg);
+}
+
+.side-category input:checked + .arrow {
+    transform: rotate(0deg)
+}
+
+.item input:checked + .item {
+    color: lightgray;
+}
+
+.sub-category-link {
+    text-decoration: none;
+    color: black;
+}
+
+.sub-category-link:hover {
+    text-decoration: none;
+}
+
+.arrow {
+    margin-right: 5px;
+}
+
+.sub-category {
+    color: gray;
+    cursor: pointer;
+}
+
+.category-title {
+    font-size: 170%;
+    font-weight: 400;
+    margin-top : 8px
+}
+
+.side-category {
+    width: 100%;
+}
+
+.multi-level {
+    padding-left: 10px;
+}
+
+
+@media (max-width:1171px) and (min-width:768px){
+    .sub-category-link{
+        font-size: small;
+    }
+}
+
+@media (max-width:500px) {
+    .sub-category, .sub-category-name {
+        font-size: 90%;
+    }
+}

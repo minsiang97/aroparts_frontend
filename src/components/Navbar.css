@@ -41,6 +41,10 @@
     color: black !important;
 }
 
+.link:hover {
+    text-decoration: none;
+}
+
 
 @media (max-width: 991px){
     .navbar {
