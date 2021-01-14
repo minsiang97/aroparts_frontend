@@ -78,14 +78,7 @@ const WebNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto nav-button">
-                <NavDropdown title={<Link className="link" to="/products"><span className="my-auto nav-active">Product</span></Link>} id="basic-nav-dropdown" show={show} onMouseEnter={showDropDown} onMouseLeave={hideDropDown}>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/1/products">Biomass System & Boiler Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/2/products">Electronic & Electrical Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/3/products">Hydraulic System & Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/4/products">Solar System</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/5/products">Pneumatic System & Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/6/products">Gauge</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/products" id="basic-nav-dropdown" style={{color:"black"}}>Product</Nav.Link>
                 <Nav.Link className="navbar-title-active" href="/contact-us" style={{color:"black"}}>Contact Us</Nav.Link>
                 </Nav>
                 <div className="ml-auto mr-3">
@@ -108,14 +101,7 @@ const WebNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto navbar-title">
-                <NavDropdown title={<Link className="link" to="/products"><span className="my-auto nav-not-active">Product</span></Link>} id="basic-nav-dropdown" show={show} onMouseEnter={showDropDown} onMouseLeave={hideDropDown}>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/1/products">Biomass System & Boiler Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/2/products">Electronic & Electrical Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/3/products">Hydraulic System & Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/4/products">Solar System</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/5/products">Pneumatic System & Accessory</NavDropdown.Item>
-                    <NavDropdown.Item className="nav-dropdown" href="/category/6/products">Gauge</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/products" id="basic-nav-dropdown" style={{color:"black"}}>Product</Nav.Link>
                 <Nav.Link className="navbar-title-not-active" href="/contact-us">Contact Us</Nav.Link>
                 </Nav>
                 <div className="ml-auto mr-3">
