@@ -92,7 +92,10 @@ const DisplayProducts = () => {
                     <Slider {...settings} asNavFor={nav2} ref={slider => (setSlider1(slider))}>
                         {productImages.map((image) => {
                             return (
-                                <img src={image.url} className="w-100"></img>
+                                <div className="slider-image">
+                                    <img src={image.url} className="display-images"></img>
+                                </div>
+                                
                             )
                         })}
                     </Slider>

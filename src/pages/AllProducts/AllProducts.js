@@ -91,12 +91,12 @@ const AllProducts = () => {
                     return (
                         <Col lg={4} sm={6} xs={12}>
                         <Card className="card-content">
-                            <Link to={`/products/${product.id}`} className="product-link"><div className="card-image">
+                            <a href={`/products/${product.id}`} className="product-link"><div className="card-image">
                                 <img src={product.url} className="product-image"/> 
-                            </div></Link>                                               
+                            </div></a>                                               
                             <Card.Body className="text-center">
-                            <Link to={`/products/${product.id}`} className="product-link"><Card.Title className="product-name">{product.product_name}</Card.Title></Link>
-                            <Link to={`/products/${product.id}`} className="product-link"><Card.Title className="product-chinese-name">{product.product_chinese_name}</Card.Title></Link>
+                            <a href={`/products/${product.id}`} className="product-link"><Card.Title className="product-name">{product.product_name}</Card.Title></a>
+                            <a href={`/products/${product.id}`} className="product-link"><Card.Title className="product-chinese-name">{product.product_chinese_name}</Card.Title></a>
                             </Card.Body>
                         </Card>
                         </Col>
