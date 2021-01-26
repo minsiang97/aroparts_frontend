@@ -55,6 +55,13 @@
 .card-image {
   overflow: hidden;
   border-bottom: 1px dashed lightgray;
+  height: 350px;
+  object-fit: contain;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card-title {
@@ -83,5 +90,41 @@
 @media (max-width:376px){
   .product-name {
     height: 70px;
+  }
+}
+
+@media (max-width: 2560px) and (min-width:2000px){
+  .card-image {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1440px){
+  .card-image {
+    height: 330px;
+  }
+}
+
+@media (max-width: 1024px){
+  .card-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 426px){
+  .card-image {
+    height: 380px;
+  }
+}
+
+@media (max-width: 376px){
+  .card-image {
+    height: 340px;
+  }
+}
+
+@media (max-width: 320px){
+  .card-image {
+    height: 285px;
   }
 }
