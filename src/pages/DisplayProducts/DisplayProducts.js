@@ -76,17 +76,6 @@ const DisplayProducts = () => {
     return (
         <>
         <Container className="product-container pb-5">
-            <div className="mb-4 row">
-                <Col>
-                    <Link className="sub-category" to={`/products`}>Products</Link>
-                    <MdKeyboardArrowRight size={25}/>
-                    <Link className="sub-category" to={`/category/${product.category_id}/products`}>{product.category}</Link>
-                    <MdKeyboardArrowRight size={25}/>
-                    <Link className="sub-category" to={`/category/sub-category/${product.sub_category_id}`}>{product.sub_category}</Link>
-                    <MdKeyboardArrowRight size={25}/>
-                    <span className="sub-category-name">{product.product_name}</span>
-                </Col>
-            </div>
             <Row className="justify-content-around">
                 <Col md={5} xs={11} className="product-image-slider">
                     <Slider {...settings} asNavFor={nav2} ref={slider => (setSlider1(slider))}>
